@@ -77,9 +77,7 @@
 	position: absolute;
 
 }
-.switch:hover{
-	background-color: lightblue;
-}
+
 .room{
 	width: 600px;
 	z-index: 10;
