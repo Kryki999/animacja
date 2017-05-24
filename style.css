@@ -61,6 +61,7 @@
 	66%{background-color: #FFCE00;}
 	100%{background-color: #78A5A3;}
 }
+
 @keyframes ballColor {
 	0%{background-color: #78A5A3;}
 	33%{background-color: #CE5A57;}
@@ -75,6 +76,9 @@
 	z-index: 40;
 	position: absolute;
 
+}
+.switch:hover{
+	background-color: lightblue;
 }
 .room{
 	width: 600px;
@@ -97,4 +101,124 @@
 }
 .switch:hover + .dark{
 	background: transparent; 
+}
+#third-frame{
+	background: lightblue;
+	color: #333;
+	height: 600px;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+@-moz-keyframes animate {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        margin-left: -500px;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+.large {
+	-webkit-animation: animate 25s linear infinite;
+	-moz-animation: animate 25s linear infinite;
+	animation: animate 25s linear infinite;
+	
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.65);
+	transform: scale(0.65);
+	margin-top: 150px;
+}
+
+.small {
+	-webkit-animation: animate 12s linear infinite;
+	-moz-animation: animate 12s linear infinite;
+	animation: animate 12s linear infinite;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.medium {
+	-webkit-animation: animate 15s linear infinite;
+	-moz-animation: animate 15s linear infinite;
+	animation: animate 15s linear infinite;
+	
+	-webkit-transform: scale(0.55);
+	-moz-transform: scale(0.55);
+	transform: scale(0.55);
+}
+
+.cloud {
+	background: #fff;
+	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+	height: 100px;
+	position: relative;
+	width: 350px;
+}
+
+.cloud:after, .cloud:before {
+  background: #fff;
+	content: '';
+	position: absolute;
+	z-indeX: -1;
+}
+
+.cloud:after {
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	width: 150px;
+	height: 180px;
+	left: 50px;
+	top: -90px;
+	
+}
+
+.cloud:before {
+	
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	height: 110px;
+	left: 180px;
+	top: -50px;
+	width: 100px;
 }
