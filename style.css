@@ -61,7 +61,6 @@
 	66%{background-color: #FFCE00;}
 	100%{background-color: #78A5A3;}
 }
-
 @keyframes ballColor {
 	0%{background-color: #78A5A3;}
 	33%{background-color: #CE5A57;}
@@ -76,9 +75,6 @@
 	z-index: 40;
 	position: absolute;
 
-}
-.switch:hover{
-	background-color: lightblue;
 }
 .room{
 	width: 600px;
